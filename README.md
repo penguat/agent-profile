@@ -1,6 +1,11 @@
 # Portable Agent Profile
 
-This folder contains a safe bootstrap for sharing the same agent working style across workspaces and machines.
+This folder contains a bootstrap for sharing the same agent working style across workspaces and machines. It has been largely created with the support of Github Copilot.
+
+This repository captures some of my preferences for working with AI in a relatively concise (i.e. token-efficient) way, and I expect to maintain and improve it over time. Suggestions are welcomed.
+
+## License
+I have no significant legal understanding of how copyright and licensing operates when AI is involved in creating something. To the extent that this is possible you may choose to operate within either the included CC-BY 4.0 license or MIT license. My intent is to be permissive and enable use in a broad range of settings. If you decide you love this project so much that you need a special license for your circumstances, email me.
 
 ## Canonical baseline
 - Workspace baseline source: templates/workspace/AGENTS.md
@@ -39,7 +44,7 @@ Install with explicit source root:
 
 ./bootstrap-agent-setup.sh --source-root /path/to/portable-root --workspace /path/to/workspace --apply
 
-## Machine portability
-1. Put this folder in a private repository.
-2. Clone it on each machine.
-3. Run the script in dry-run first, then with --apply.
+## What else should I use if I like the idea but not the execution
+I don't know for sure, but you might get on well with https://github.com/yzhao062/anywhere-agents instead. It's a lot more full-fledged but it's also harder to understand and might use a couple more tokens. This repo *is* a weekend project.
+
+If this repo is too much then I'd suggest you make your own, or suffer with the default behaviour, up to you.
